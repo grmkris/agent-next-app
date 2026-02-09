@@ -36,7 +36,7 @@ export const link = new RPCLink({
     }
     return {};
   },
-  url: `${typeof window === "undefined" ? "http://localhost:3001" : window.location.origin}/api/rpc`,
+  url: `${typeof window === "undefined" ? "http://localhost:3001" : window.location.origin}/app/api/rpc`,
 });
 
 export const client: AppRouterClient = createORPCClient(link);
